@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin: 15px 0;
+    font-size: 45px;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    padding: 5px 0;
+    color: white;
+}
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form_elems {
+    width: 450px;
+    padding: 60px 50px;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.692) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bg {
+    position: absolute;
+    width: 1900px;
+    height: 700px;
+    background: linear-gradient(to top right, rgb(255, 255, 255), #ff00b3, #cc4100, #009b15, rgb(0, 66, 124), #ff00bf, white);
+    z-index: -1;
+    animation-name: rotates;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotates {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.form_elems a {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: black;
+}
+
+button,
+.submit {
+    padding: 8px;
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 500!important;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+.submit:hover {
+    background-color: rgb(0, 189, 0);
+    color: white;
+}
+
+.table-container {
+    margin: 20px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    background-color:aqua;
+    color:#ff00b3;
+}
+
+.data-table th {
+    background-color:green;
+    font-weight: bold;
+    text-align: center;
+    color: #ff00b3;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.btn-delete,
+.btn-update {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.btn-delete {
+    background-color:blueviolet;
+}
+
+.btn-update {
+    background-color:deeppink;
+}
